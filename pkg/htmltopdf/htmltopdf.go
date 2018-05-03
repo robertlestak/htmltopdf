@@ -15,8 +15,6 @@ func Convert(fp string) (string, error) {
 	uid := fmt.Sprintf("%s", ui)
 	a := []string{
 		"-q",
-		"-B",
-		"0",
 		"-L",
 		"0",
 		"-R",
