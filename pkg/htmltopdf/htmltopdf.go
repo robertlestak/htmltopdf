@@ -11,7 +11,10 @@ func Convert(fp string) (string, error) {
 	var o string
 	var e error
 	var com string
-	ui := uuid.NewV4()
+	ui, err := uuid.NewV4()
+	if err != nil {
+		return o, err
+	}
 	uid := fmt.Sprintf("%s", ui)
 	a := []string{
 		"-q",
