@@ -1,3 +1,7 @@
-module github.com/adal-io/htmltopdf/v2
+module github.com/adal-io/htmltopdf
 
-require github.com/satori/go.uuid v1.2.0
+require (
+	github.com/gorilla/mux v1.6.1
+	github.com/joho/godotenv v1.2.0
+	github.com/rs/cors v1.3.0
+)
